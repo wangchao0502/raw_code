@@ -32,4 +32,4 @@ def djb2(sample: dict) -> int:
     hash_value = 5381
     for x in sample['text']:
         hash_value = ((hash_value << 5) + hash_value) + ord(x)
-    return hash_value & 0xFFFFFFFF
+    return sample['text'] = str(hash_value & 0xFFFFFFFF)
